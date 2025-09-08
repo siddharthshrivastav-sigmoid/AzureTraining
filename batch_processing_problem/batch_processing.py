@@ -28,7 +28,7 @@ with open("sales_data.csv", "w+") as file:
 
         writer.writerows(data)
 
-
+# reading with pandas
 df = pd.read_csv("sales_data.csv")
 
 df = df.dropna()

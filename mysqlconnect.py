@@ -19,7 +19,7 @@ try:
         record = cursor.fetchone()
         print("You're connected to:", record)
         cursor.execute("CREATE TABLE IF NOT EXISTS Employees (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(50))")
-        cursor.execute("INSERT INTO Employees (name) VALUES ('Vikash')")
+        cursor.execute("INSERT INTO Employees (name) VALUES ('siddharth')")
         connection.commit()
         cursor.execute("SELECT * FROM Employees")
         rows = cursor.fetchall()

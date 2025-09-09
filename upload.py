@@ -4,7 +4,7 @@ import os
 # -------------------------
 # Step 1: Define parameters
 # -------------------------
-#connect_str = "DefaultEndpointsProtocol=https;AccountName=siddharthstoragecli;AccountKey=nzErchyjBxU0vuyNikjDba+el/00LfktjdFYG9NBzBZG3ibRjlbuq/RXgKDsB/ydaoVK+fiIyfas+AStLEzbOg==;EndpointSuffix=core.windows.net"
+
 container_name = "images"  # Replace with your container name
 local_file_path = "top_customers.csv"   # Path to the local file to upload
 blob_name = os.path.basename(local_file_path)  # Name for the blob in Azure

@@ -5,7 +5,7 @@ from io import StringIO
 # -------------------------
 # Step 1: Define parameters
 # -------------------------
-#connect_str = "DefaultEndpointsProtocol=https;AccountName=siddharthstoragecli;AccountKey=nzErchyjBxU0vuyNikjDba+el/00LfktjdFYG9NBzBZG3ibRjlbuq/RXgKDsB/ydaoVK+fiIyfas+AStLEzbOg==;EndpointSuffix=core.windows.net"
+
 container_name = "images"
 blob_name = "top_customers.csv"  # the file you uploaded
 

@@ -1,0 +1,9 @@
+{
+	"name": "siddharthfactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4e43a462-326d-46e4-a50b-8f02feda5727",
+		"tenantId": "4ac50105-0c66-404e-a107-7cbd8a9a6442"
+	}
+}

@@ -4,4 +4,5 @@ I have tried the wrangling task with normal dataflow and not power query as powe
 
 The initial tasks and labs werent tracked by but were done properly.
 
-Day 5 - Databricks
+For git Config pipeline:
+upon running git pull we can see the changes saved by the pipeline

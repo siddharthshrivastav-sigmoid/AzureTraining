@@ -1,10 +1,18 @@
 from snowflake.snowpark import Session
 from snowflake.snowpark.functions import col
+from dotenv import load_dotenv
+from pathlib import Path
+import os
+
+env_path = Path("/Users/siddharthshrivastav/IdeaProjects/AzureTraining/Snowflake/snowpark/secrets.env")
+load_dotenv(dotenv_path=env_path)
+
+snowflake_pass = os.environ.get("SNOWFLAKE_PASSWORD")
 
 connection_parameters = {
     "account": "wrxbrkh-my02936",
     "user": "siddharth912",
-    "password": "YD9RuQrb8vLKU85",
+    "password": snowflake_pass,
     "role": "ACCOUNTADMIN",
     "warehouse": "LAB_WH",
     "database": "SNOWPARK_DB",
@@ -47,8 +55,8 @@ df.show()
 
 # ML Lab
 # Prepare features:
-df = session.table("CUSTOMERS")
-features = df.select("AGE", "INCOME", "PURCHASE_AMOUNT").to_pandas()
+# df = session.table("CUSTOMERS")
+# features = df.select("AGE", "INCOME", "PURCHASE_AMOUNT").to_pandas()
 
 # Train ML model in Python:
 # from sklearn.linear_model import LinearRegression
